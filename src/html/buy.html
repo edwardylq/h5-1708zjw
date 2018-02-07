@@ -7,6 +7,119 @@
     <link rel="stylesheet" type="text/css" href="../css/buycar.css" />
 </head>
 <body>
-    
+     <div class="top">
+    <div class="warp cl">
+        <span class="top-link">
+            您好，欢迎来到 <em class="s-name">中酒网！</em>
+                <a href="/">去首页</a>
+        </span>
+        <ul class="login-regin">
+                <li class="L-line"> <a href="/Login">请登录</a></li>
+                <li> <a href="/Register">免费注册</a></li>
+        </ul>
+        <ul class="quick_list">
+            <li class="sitemap dropdown">
+                <span class="outline"></span>
+                <span class="blank"></span>
+                <a href="/UserCenter/home">我的中酒网<b></b></a>
+                <div class="dropdown-menu">
+                    <ol>
+                        <li><a href="/UserOrder">已买到的商品</a></li>
+                        <li><a href="/productConcern">我关注的商品</a></li>
+                        <li><a href="/shopConcern">我关注的店铺</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><em class="shopping-cart"></em><a target="_blank" href="/cart/cart">购物车<em><span id="shopping-amount">0</span></em>件</a></li>
+            <li class="moblie-qrcode dropdown">
+
+                <span class="outline"></span>
+                <span class="blank"></span>
+                <a href="javascript:void(0)">微信端</a>
+                    <div class="dropdown-menu">
+                        <img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/Site/qrCode.png" width="90" height="90">
+                    </div>
+            </li>
+                <li class="app-qrcode dropdown service">
+
+                    <span class="outline"></span>
+                    <span class="blank"></span>
+                    <a target="_blank" href="http://pro.zhongjiu.cn/20141209/shouji/shouji.html">APP</a>
+                    <div class="dropdown-menu">
+                         <!--Base64显示-->
+                        <img width="90" height="90" src="http://img5.zhongjiu.cn/mob.png">
+                        <h3 style="text-align:center;">扫描二维码</h3>
+                        <p style="text-align:center;">下载手机客户端</p>
+                    </div>  
+                </li>
+            <li class="service dropdown">
+                <span class="outline"></span>
+                <span class="blank"></span>
+                <a href="/SellerAdmin">卖家中心<b></b></a>
+
+                <div class="dropdown-menu">
+                    <ol>
+                        <li><a href="/SellerAdmin">商家入驻</a></li>
+          
+                    </ol>
+                </div>
+            </li>
+            <li class="service dropdown">
+                  <span class="outline"></span>
+                  <span class="blank"></span>
+                  <a href="http://zhongjiu.cn/SellerAdmin">网站导航<b></b></a></ul>
+</div>
+<div class="w990 w1 cl" style="height:95px;">
+    <div id="logo"><a href="/"><img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/logo.png" height="60" title="返回商城首页" alt="返回商城首页"></a>
+    </div>
+    <div class="progress cl">
+        <ul class="progress-1 pro-c1">
+            <li class="step-1">1.我的购物车</li>
+            <li class="step-2">2.填写核对订单信息</li>
+            <li class="step-3">3.成功提交订单</li>
+        </ul>
+    </div>
+</div>
+
+<div class="w990 cart">
+    <div class="cart-hd group"><h2>我的购物车</h2></div>
+    <div id="show">
+        <div class="cart-inner cart-empty">
+            <div class="cart-list">
+                <div class="cart-thead cl">
+                    <div class="column t-checkbox form"><input type="checkbox" name="checkAll" checked="" value=""><label for="">全选</label></div>
+                    <div class="column t-goods">商品</div>
+                    <div class="column t-price">商城价</div>
+                    <div class="column t-quantity">数量</div>
+                    <div class="column t-action">操作</div>
+                </div>
+                <div id="product-list" class="cart-tbody">
+                        <div style=" padding:30px 0; background:url('/Images/dg_loading.gif')  center no-repeat;"></div>
+                </div>
+                
+                <div class="ui-ceilinglamp-1">
+                    <div class="cart-dibu">
+                        <div class="cart-total-2014">
+                            <span class="column t-checkbox form" style="margin-right:10px;">
+                                <input type="checkbox" checked="" name="checkAll" value="" class="jdcheckbox" style="margin: 15px 5px 0 19px;">
+                                <label for="">全选</label>
+                            </span>
+                            <span class="delete" style="margin-right:10px;">
+                                <b></b>
+                                <a href="javascript:void(0);" id="remove-batch">删除</a>
+                            </span>
+                            <span id="selectedCount" style="color:#e4393c;">0</span> 件商品
+                            <div class="cart-button">
+                                <a class="checkout" href="javascript:void(0);" id="toSettlement"><b></b>去结算</a>
+                            </div>
+                            <div class="total fr">总计（不含运费）：<span id="finalPrice">¥ 0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
 </body>
 </html>

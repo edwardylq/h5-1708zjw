@@ -367,9 +367,3 @@ li#right_customer .customer em {
   width: 40px;
   text-align: center;
   display: block; }
-.box{float:left; width:198px; height:320px; margin-left:5px; border:1px solid #e0e0e0; text-align:center};
-    .box p{line-height:20px; padding:4px 4px 10px 4px; text-align:left};
-    .box:hover{border:1px solid #f90};
-    .box h4{line-height:32px; font-size:14px; color:#f30;font-weight:500};
-    .box h4 span{font-size:20px};
-    .u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
