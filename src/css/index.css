@@ -53,16 +53,23 @@
   line-height: 30px; }
 
 .content_recont {
-  overflow: hidden; }
-  .content_recont ul {
-    width: 1206px; }
-    .content_recont ul li {
-      float: left;
-      width: 230px;
-      height: 220px;
-      overflow: hidden;
-      margin-right: 10px;
-      margin-top: 10px; }
+  overflow: hidden;
+  width: 999px;
+  min-height: 2100px;
+  height: auto;
+  padding-left: 100px; }
+  .content_recont dl {
+    width: 219px;
+    padding: 7px;
+    font-family: arial, \5b8b\4f53;
+    height: 312px;
+    border: 1px dotted #ddd;
+    float: left;
+    margin-left: 11px;
+    margin-top: 11px; }
+    .content_recont dl img {
+      height: 218px;
+      width: 218px; }
 
 .floor {
   margin-bottom: 30px; }
@@ -203,6 +210,17 @@
   float: left;
   width: 950px;
   background-color: #fff; }
+  .content-right-box dl {
+    width: 219px;
+    font-family: arial, \5b8b\4f53;
+    height: 312px;
+    border: 1px dotted #ddd;
+    float: left;
+    margin-left: 11px;
+    margin-top: 11px; }
+    .content-right-box dl img {
+      height: 218px;
+      width: 218px; }
 
 .content-right-img li {
   float: left;

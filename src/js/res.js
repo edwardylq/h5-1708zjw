@@ -1,23 +1,21 @@
 require(['config'],function(){
     require(['jquery'],function($){
-        // function vcode(){
-        //     var res="";
-        //     for(var i=0;i<4;i++){
-        //         res+=parseInt(Math.random()*10);
-        //     }
-        //     return res;
-        // }
-        // var yzcode=document.getElementById("vcode");
-        // var yzm=vcode();
-        // yzcode.innerHTML=yzm;
+        function vcode(){
+            var res="";
+            for(var i=0;i<4;i++){
+                res+=parseInt(Math.random()*10);
+            }
+            return res;
+        }
+        var yzcode=document.getElementById("yz");
+        var yzm=vcode();
+        yzcode.innerHTML=yzm;
         $('.btn-regist').on('click',function(){
             var username = $('#cellPhone').val();
             var password = $('#pwd').val();
             var password2 = $('#pwdRepeat').val();
-            // var phone = $('#phone').val();
-            // var code = $('#code').val();
+            var code = $('#checkCode').val();
 
-            // var phone = document.getElementById('phone').value;
             var reg = /^1[34578]\d{9}$/i
             if(username === ''){
                 alert('手机号不能为空');
@@ -28,14 +26,14 @@ require(['config'],function(){
                 return false;
             }
 
-            // if(_code === ''){
-            //     alert('请输入验证码');
-            //     return false;
-            // }
-            // else if(_code != yzm){
-            //     alert('验证码不正确');
-            //     return false;
-            // }
+            if(code === ''){
+                alert('请输入验证码');
+                return false;
+            }
+            else if(code != yzm){
+                alert('验证码不正确');
+                return false;
+            }
 
             if(password === ''){
                 alert('密码不能为空');
@@ -64,12 +62,6 @@ require(['config'],function(){
                     }else if(data === 'success'){
                         location.href = '../index.html';
                     }
-                    // else if(data === 'error'){
-                    //     alert('密码或账号不正确');
-                    //     return false;
-                    // }
-
-                    
                 }
             })
         })

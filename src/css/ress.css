@@ -1,9 +1,4 @@
 @charset "UTF-8";
-body {
-  color: #545454;
-  background: #eef3fa;
-  font: 12px/1.5 'microsoft yahei', 'SimSun'; }
-
 .top {
   width: 100%;
   height: 30px;
@@ -148,6 +143,11 @@ body {
   width: 100px;
   float: left; }
 
+body {
+  color: #545454;
+  background: #eef3fa;
+  font: 12px/1.5 'microsoft yahei', 'SimSun'; }
+
 .btn {
   margin-left: 10px;
   border: 1px solid #dddddd;
@@ -185,6 +185,20 @@ body {
   overflow: hidden;
   background: url(../img/regist-btn.jpg) no-repeat;
   border: none 0; }
+
+.btn {
+  margin-left: 10px;
+  border: 1px solid #dddddd;
+  padding: 0;
+  width: 106px;
+  height: 36px;
+  background: #f4f4f4;
+  margin-top: 0;
+  text-align: center;
+  line-height: 36px;
+  color: #333;
+  text-decoration: none;
+  display: inline-block; }
 
 #footer {
   padding-bottom: 30px;

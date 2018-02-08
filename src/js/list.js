@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-05 20:46:47
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-07 20:28:25
+* @Last Modified time: 2018-02-08 20:30:53
 */
 require(['config'],function(){console.log(666);
     require(['jquery','banner'],function($){
@@ -81,7 +81,10 @@ require(['config'],function(){console.log(666);
             xhr.send();
         }
     }
-    
+    $('.product_list').on('click','dl',function(){
+        var id = this.id;
+        location.href = '../html/xiangqingye.html?'+id;
+    })
       
 // });
         
