@@ -31,6 +31,37 @@ require(['config'],function(){
                  })
                  
             }
+        })
+
+        $che=$('#end');
+
+        $('.btn-append').on('click',function(){
+            console.log(666)
+            var $img = $('.xzoom-container').children('img');
+            var $copyImg = $img.clone();
+            
+            $copyImg.css({
+                position:'absolute',
+                left:$img.offset().left,
+                top:$img.offset().top,
+                width:$img.outerWidth()
+            });
+
+            // 把图片写入页面
+            $('body').append($copyImg);
+            
+            $copyImg.animate({
+                left:$che.offset().left,
+                top:$che.offset().top + $che.height(),
+                width:30
+            },function(){
+            // 动画完成后
+
+            // 删除复制的图片
+            $copyImg.remove();
+
+            })
+                    
         })         
         
     })
